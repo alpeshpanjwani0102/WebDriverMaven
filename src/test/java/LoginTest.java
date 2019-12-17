@@ -20,6 +20,8 @@ public class LoginTest {
     public void doLogin(){
         driver.get("http://gmail.com");
         driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys("abc@abc.com");
+        String title = driver.getTitle();
+        System.out.println("title of this page is : " + title);
     }
 
     @AfterTest
