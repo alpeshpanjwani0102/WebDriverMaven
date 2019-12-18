@@ -22,6 +22,7 @@ public class LoginTest {
         driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys("abc@abc.com");
         String title = driver.getTitle();
         System.out.println("title of this page is : " + title);
+        System.out.println("just checking");
 
         /*
         adding new comments to see if jenkins triggers build to check CI
